@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main(){
+      int n = 0;
+      int num = 0;
+      int found = 0;
+      printf("Enter size of array");
+      scanf("%d",&n);
+      int arr[n];
+      for(int i = 0; i < n ;i++){
+          printf("arr[%d] = " , i);
+          scanf("%d",&arr[i]);
+         }
+       printf("Element thats need to be found");
+       scanf("%d",&num);
+       for(int i = 0; i < n; i++){
+          if((arr[i] ^ num) == 0 ){
+              found = 1;
+              break;
+             }
+       }
+       if(found){
+           printf(" Yes ");
+        }else{
+            printf(" No ");
+         }
+         return 0;
+}
+
